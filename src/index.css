@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
 
@@ -18,6 +19,8 @@
 @layer base {
   body {
     font-family: 'Inter', sans-serif;
+    background-color: var(--color-background-dark);
+    color: white;
   }
 }
 
