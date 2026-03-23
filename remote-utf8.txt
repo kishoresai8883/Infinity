@@ -1,0 +1,2 @@
+﻿origin	https://github.com/kishoresai8883/Infinity.git (fetch)
+origin	https://github.com/kishoresai8883/Infinity.git (push)

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-[100svh] md:min-h-0 md:h-[94vh] flex flex-col justify-center overflow-hidden py-2 md:py-0">
+      <section className="relative min-h-[100svh] md:min-h-0 md:h-[94vh] flex flex-col justify-center overflow-hidden py-4 md:py-0">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/80 to-background-dark/30 z-10"></div>
           <img
@@ -134,22 +134,22 @@ export default function Home() {
               <div>
                 <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">Why Choose Infinity Glass & Interiors?</h2>
                 <ul className="space-y-6">
-                  <li className="flex gap-4">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg">verified</span>
+                  <li className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">verified</span>
                     <div>
                       <h4 className="font-bold text-xl">High-Quality Materials & Finishing</h4>
                       <p className="text-white/70">We use only the finest materials to ensure longevity.</p>
                     </div>
                   </li>
-                  <li className="flex gap-4">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg">speed</span>
+                  <li className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">speed</span>
                     <div>
                       <h4 className="font-bold text-xl">On-Time Project Delivery</h4>
                       <p className="text-white/70">Strict adherence to project timelines and milestones.</p>
                     </div>
                   </li>
-                  <li className="flex gap-4">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg">support_agent</span>
+                  <li className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">support_agent</span>
                     <div>
                       <h4 className="font-bold text-xl">Experienced & Skilled Professionals</h4>
                       <p className="text-white/70">Dedicated maintenance and after-sales service team.</p>
