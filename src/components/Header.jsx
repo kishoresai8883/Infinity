@@ -12,7 +12,7 @@ export default function Header() {
     `text-2xl font-bold transition-colors hover:text-primary ${isActive ? 'text-primary' : 'text-white'}`;
 
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+    <header className="border-b border-slate-200 dark:border-slate-800 bg-background-dark sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between relative">
         <Link to="/" className="flex items-center gap-3 relative z-50" onClick={() => setIsMobileMenuOpen(false)}>
           <img src={logo} alt="Infinity Glass Logo" className="h-14 w-auto object-contain" />
