@@ -55,7 +55,7 @@ export default function Services() {
       <section className="relative min-h-[350px] md:h-[400px] w-full overflow-hidden bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex flex-col justify-center py-16 md:py-0">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-60"
-          style={{ backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9dW73IrKv5DQigIGb4RRUL7NCtWJBXJUIkF1hXO4J_R9G8mv_7VSIUu8oWt6GeQcQ2Dr43GlGeYguPP7_Oa8HP_Rbx7TL9fcsHU5f_g4cGHlaO2tzmVdyczmXVd8dqAVJ9Lp39QNEK1GZ0mtZFnyibwoSqZYp7lQCQs505rQBAT1xqiCvpvg04yOo8sR7ZJzO89lZFWaifLk_oLweAjBiDKg8548cXYbbyctlzntbsuKStAetigSzbCJuWj_cvu-ZJVNYBb_3WZ-Q")` }}
+          style={{ backgroundImage: `url("https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=2000")` }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">

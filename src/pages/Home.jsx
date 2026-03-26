@@ -9,9 +9,9 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/80 to-background-dark/30 z-10"></div>
           <img
-            alt="Modern Architecture"
+            alt="Modern Glass Architecture"
             className="w-full h-full object-cover"
-            src="https://www.officeworkdesign.com/wp-content/uploads/2023/02/Frameless-glass-walls-03.jpg"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop"
           />
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full">
@@ -127,49 +127,93 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-background-light dark:bg-background-dark">
+      <section className="py-24 bg-slate-50 dark:bg-slate-900/30 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-[2rem] p-12 lg:p-20 overflow-hidden relative">
-            <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center text-white">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">Why Choose Infinity Glass & Interiors?</h2>
-                <ul className="space-y-6">
-                  <li className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">verified</span>
-                    <div>
-                      <h4 className="font-bold text-xl">High-Quality Materials & Finishing</h4>
-                      <p className="text-white/70">We use only the finest materials to ensure longevity.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">speed</span>
-                    <div>
-                      <h4 className="font-bold text-xl">On-Time Project Delivery</h4>
-                      <p className="text-white/70">Strict adherence to project timelines and milestones.</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined bg-white/20 p-2 rounded-lg shrink-0">support_agent</span>
-                    <div>
-                      <h4 className="font-bold text-xl">Experienced & Skilled Professionals</h4>
-                      <p className="text-white/70">Dedicated maintenance and after-sales service team.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  alt="Interior Glass"
-                  className="rounded-xl shadow-lg"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHgvNY-g0P3H8BhZIid_W-c3imj3Fl4bS7Fi8FD4JIi3SXDbMPAoeZLkvUiVJumKJX8i5mUSyx3YRIwBqitYZPpXqXlg_-88c2A4BboFnlfpQdMtmpBWEqZftTXUeEhvEBiyPgrPhmDmx4yvZwkDrSBDKRBeYFR-kneZMpGVQrQLJRZqpMzzhPIW5zYAmbAVYiTedlTm7nrVUeZDVf3C9mIpemqRW-LMxfiNtnXrzKujOQo10Z_t4SdK6MrUVDOcmO06mt11C-98Ut"
-                />
-                <img
-                  alt="Office Glass"
-                  className="rounded-xl shadow-lg mt-8"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1b9MvAR6nw_ahR6t5n6KpqgR57Fs1rPvrC3qGI7bWTV6mQy0YcDnsqCaB4H3uETV4XSaWSph2BIDsX1NZhr6DT_QiBLK0fHot_CSc0SHzbPfkQ8Qi2ZWErgMA-USXp8fAGb6FtA4bI0pDIeXHDO4W_3gz4KelbNQtHjHfTPJ8X_yc5R81PiMUslqU5Y5Fv2i54PBCZjCFyHxPcFAgdxdQMs74tlRSD371gRYRCWUkqy1z_7AJVgLC-Ng_0m65wXsCfm8oshmFPzO"
-                />
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left Content */}
+            <div className="relative z-10">
+              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Why Choose Us</h2>
+              <h3 className="text-4xl md:text-5xl font-black mb-8 text-slate-900 dark:text-white leading-tight">
+                Crafting Brilliance in Every Detail
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
+                We combine architectural innovation with premium materials to deliver glass and interior solutions that exceed expectations.
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex gap-5 group">
+                  <div className="w-14 h-14 rounded-2xl bg-white dark:bg-slate-800 shadow-lg border border-slate-100 dark:border-slate-700 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300 text-primary">
+                    <span className="material-symbols-outlined text-3xl">workspace_premium</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Premium Materials</h4>
+                    <p className="text-slate-600 dark:text-slate-400">Sourcing only the highest-grade toughened glass and architectural hardware for guaranteed longevity.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-5 group">
+                  <div className="w-14 h-14 rounded-2xl bg-white dark:bg-slate-800 shadow-lg border border-slate-100 dark:border-slate-700 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300 text-primary">
+                    <span className="material-symbols-outlined text-3xl">architecture</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Precision Engineering</h4>
+                    <p className="text-slate-600 dark:text-slate-400">Our meticulous installation guarantees absolute safety and flawless aesthetic presentation.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-5 group">
+                  <div className="w-14 h-14 rounded-2xl bg-white dark:bg-slate-800 shadow-lg border border-slate-100 dark:border-slate-700 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300 text-primary">
+                    <span className="material-symbols-outlined text-3xl">timer</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">On-Time Delivery</h4>
+                    <p className="text-slate-600 dark:text-slate-400">We respect your timelines, ensuring efficient project management without compromising quality.</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            {/* Right Images (Bento Grid) */}
+            <div className="relative">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 via-transparent to-primary/10 blur-[100px] -z-10 rounded-full"></div>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
+                <div className="space-y-4 sm:space-y-6 md:mt-12">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 dark:shadow-black/50 aspect-[4/5] hover:-translate-y-2 transition-transform duration-500">
+                    <img
+                      src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
+                      alt="Modern Interior Glass"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-700 flex flex-col sm:flex-row items-center sm:items-start gap-4 hover:-translate-y-1 transition-transform duration-300 text-center sm:text-left">
+                    <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 shrink-0">
+                      <span className="material-symbols-outlined text-2xl">verified_user</span>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-black text-slate-900 dark:text-white">100%</p>
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 sm:space-y-6 md:-mt-8">
+                  <div className="bg-primary p-8 rounded-3xl shadow-xl shadow-primary/30 text-white flex flex-col justify-center items-center sm:items-start gap-2 hover:-translate-y-1 transition-transform duration-300 text-center sm:text-left">
+                    <span className="material-symbols-outlined text-4xl mb-2 opacity-80">military_tech</span>
+                    <p className="text-4xl font-black">15+</p>
+                    <p className="font-medium text-white/80">Years Experience</p>
+                  </div>
+                  <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 dark:shadow-black/50 aspect-[4/5] hover:-translate-y-2 transition-transform duration-500">
+                    <img
+                      src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800"
+                      alt="Commercial Glass Installation"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent z-10"></div>
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9dW73IrKv5DQigIGb4RRUL7NCtWJBXJUIkF1hXO4J_R9G8mv_7VSIUu8oWt6GeQcQ2Dr43GlGeYguPP7_Oa8HP_Rbx7TL9fcsHU5f_g4cGHlaO2tzmVdyczmXVd8dqAVJ9Lp39QNEK1GZ0mtZFnyibwoSqZYp7lQCQs505rQBAT1xqiCvpvg04yOo8sR7ZJzO89lZFWaifLk_oLweAjBiDKg8548cXYbbyctlzntbsuKStAetigSzbCJuWj_cvu-ZJVNYBb_3WZ-Q')` }}
+                    style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=2000')` }}
                 ></div>
                 <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center w-full">
                     <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Est. 2005</span>
@@ -202,17 +202,16 @@ export default function About() {
 
             {/* CTA Section */}
             <section className="py-20 px-4">
-                <div className="max-w-5xl mx-auto bg-primary rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                    <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "20px 20px" }}></div>
-                    <h3 className="text-4xl font-black mb-6 relative z-10">Ready to start your project?</h3>
-                    <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto relative z-10">
-                        Let's discuss how our premium glass solutions can transform your home or business.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-                        <Link to="/contact" className="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-colors">
+                <div className="bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
+                    <div className="max-w-xl text-center md:text-left">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Ready to start your project?</h2>
+                        <p className="text-slate-600 dark:text-slate-400 text-lg">Let's discuss how our premium glass solutions can transform your home or business.</p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                        <Link to="/contact" className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all text-center w-full sm:w-auto">
                             Book a Consultation
                         </Link>
-                        <Link to="/projects" className="bg-primary border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">
+                        <Link to="/projects" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all text-center w-full sm:w-auto">
                             View Projects
                         </Link>
                     </div>

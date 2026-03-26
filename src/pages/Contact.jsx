@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ export default function Contact() {
             <div className="relative min-h-[350px] md:h-[400px] w-full overflow-hidden bg-slate-900 flex flex-col justify-center py-16 md:py-0">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-60"
-                    style={{ backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuA86rTY_TFvvBHGn_6OXYQFyjs3PYZALlShxKTHIMavyTcs5aCE8tccq85V5wRbzB4VDt-cjUVDmn04j6GZZMi18RP4IF1V29PzHGPf_nXYrMWBCgxkR4CKYi8q0ZDq2lpEP6hUbgxH6OpLVmjJrfI8fis5F1Y_WsqXLI2RpOZn1J8G8_-pKx1niqnvn5Hm-b3g2sJXL8P7juM189YlD0Q5GEcQaoTOn3pfuwOsTGouUtExr_30kNdepx6yzOIVGMtuGiBi8KX2but9")` }}
+                    style={{ backgroundImage: `url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=2000")` }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
                 <div className="relative h-full flex items-center justify-center px-6 w-full">
@@ -62,7 +63,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg">Our Office</h3>
-                                <p className="text-slate-600 dark:text-slate-400">Plot No. 180, Sai Dinesh Apartments<br />Motinagar, Hyderabad</p>
+                                <p className="text-slate-600 dark:text-slate-400">Plot No. 180, Sai Dinesh Apartments<br />Motinagar, Hyderabad, Telangana - 500018</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -138,17 +139,38 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="px-6 lg:px-20 pb-20 max-w-7xl mx-auto">
-                <div className="w-full min-h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner relative flex">
-                    <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-                        <div className="text-center">
-                            <span className="material-symbols-outlined text-6xl text-primary/40">map</span>
-                            <p className="mt-4 text-slate-500 font-medium">Interactive Map Location</p>
-                            <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="mt-2 text-primary font-bold hover:underline inline-block">Open in Google Maps</a>
-                        </div>
-                    </div>
+        <div className="px-6 lg:px-20 pb-20 max-w-7xl mx-auto">
+            <div className="w-full min-h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner relative flex">
+                <iframe 
+                    title="Infinity Glass & Interiors Location Map"
+                    src="https://maps.google.com/maps?q=Motinagar,+Hyderabad,+Telangana+-+500018&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
+                    allowFullScreen="" 
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+
+        {/* CTA Section */}
+        <section className="py-20 px-4">
+            <div className="bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
+                <div className="max-w-xl text-center md:text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Looking for inspiration?</h2>
+                    <p className="text-slate-600 dark:text-slate-400 text-lg">Browse through our portfolio of premium architectural glass and interior design projects.</p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <Link to="/projects" className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all text-center w-full sm:w-auto">
+                        View Portfolio
+                    </Link>
+                    <Link to="/services" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all text-center w-full sm:w-auto">
+                        Our Services
+                    </Link>
                 </div>
             </div>
-        </main>
+        </section>
+    </main>
     );
 }
