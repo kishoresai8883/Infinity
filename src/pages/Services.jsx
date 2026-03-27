@@ -4,47 +4,74 @@ const SERVICES_DATA = [
   {
     id: 1,
     title: 'Glass Partitions & Railings',
-    description: 'High-performance structural glass solutions for modern facades, providing thermal efficiency and aesthetic brilliance.',
+    description: 'Elegant and durable glass partitions and railings that seamlessly blend safety with modern aesthetics, maximizing natural light and visual space.',
     icon: 'architecture',
     tag: 'Structural',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuJ37aaKiSI8NMJm82hN7_xBXzz9E1TabHGn-0lc7tTIYuL0TQIml5iVHhGJnJpNRCLKsoiEV8IZECA9xkyGq-uosITE3XKPymcTnPhAqsQa-1VsGSS_-K7xLM6b0aTxm7nMlIm7AUK3U08cpJhAxdHLaNAxOMY5ei0b6cnyou8jDruEH1JpIqbP893JVnkixHbylLJ9Kn2mIg-2nu4b4W_dcxzMoA4rNPC_Y40wNdVhfWgv9FgoQPw0VyvxMvunKj8FygqJMvbICq',
-    alt: 'Modern architectural glass facade on skyscraper'
+    image: 'https://i.pinimg.com/originals/2b/da/d5/2bdad5cf0bacf10fea9f5bd4710e3b29.jpg',
+    alt: 'Modern glass railings on a staircase'
   },
   {
     id: 2,
     title: 'ACP, HPL & Shera Cladding',
-    description: 'Artisanal mirror designs crafted for luxury interiors. From antique finishes to smart LED integrations.',
+    description: 'Advanced exterior cladding solutions using premium ACP, HPL, and Shera boards. Enhance your building\'s facade with superior weather resistance and contemporary design.',
     icon: 'grid_view',
-    tag: 'Bespoke',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCeDQLKyDckBOp44HaBm7iCu_CQpT8uO9nRRPe0TwlYHKNqV2bluAjE5EH04rz9sEwyzG2HglNB8qNqX8qq4gnwG7CtGMFuItUDe_QJpQ6Bd-bMvMDnS9VOl1KUKjKxkRqtkNX6NOIBVGlH9-y7TaIMOw-xwHMa5m8iv0Wt5z3TCTL2cPd3pFVIel3omMDl12eOlH7_kzUynCjG85rwot-6tmkPNU4zQwu5WeKrjAVe4OitL1jCDB8ewBXaLm7nxG1-lIN67R4_CZr0',
-    alt: 'Luxury interior with bespoke circular wall mirrors'
+    tag: 'Exteriors',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+    alt: 'Modern building facade showing cladding'
   },
   {
     id: 3,
     title: 'Spider Glazing',
-    description: 'Sleek, acoustic-rated modular glass partitions designed to create private yet open collaborative environments.',
+    description: 'Experience breathtaking architectural transparency with our structural spider glazing systems, perfect for stunning glass facades, canopies, and vast entryways.',
     icon: 'meeting_room',
-    tag: 'Workspace',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBFGQMo5S4gbDr4Yv2VTjLnbc0bzEPe7aoCRlOnpzHEvA1o1u0zJrEU2WlHGvx_uyh3v_UDQteCbkYksLgi3yQM0GC62s6wpBhv-ja5rqhyb5_RqoaYDBKSVfRN8RCiJgxeOt8VBXleDdjBr-_TLBWUkpYBm5_2p4xUaRHw7_5oJsZ02mt-B0Uv6D3rtXr0uOf47UKpAJ5mldtSCNtD-VHu12NDSrk8NLi-vl8n0UqKCxyG_df2BLamWWnXtkUpmFPDN7L-YwS1v4Vc',
-    alt: 'Modern office with transparent glass partition walls'
+    tag: 'Facades',
+    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=800',
+    alt: 'Glass facade featuring structural spider glazing'
   },
   {
     id: 4,
     title: 'Glass & Clay Canopies',
-    description: 'Full turnkey interior solutions for commercial excellence, from conceptual design to final furniture installation.',
+    description: 'Custom-designed canopies incorporating high-strength glass and artisan clay tiles, providing elegant shelter while elevating the architectural character of any entrance.',
     icon: 'design_services',
     tag: 'Commercial',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDwRaL2UY4df-5g5Nt3In9ASB-uqEUHp8lwnOT6F7JsqkjREP9aZDbgFLT2FhZj8WKIAK4fFgvti8Ga_Xtd46O5zdGSs1fzp0QWjDB8afYC4EMN3dVAFS6BtBkDVc2mMs5nBprDDQQ93WSX-iJFMW9gGPbWIDxlrIbpJQsCytK0nJHzYZnrLj20VRzFx4n2yBiPnljJ9_JJfal2_zw5T7oWX-glWS5LxhAmVD1YSmzYpjj9NwBRYYTmpCoaxFAkpo_FCpBOU2MEG0gH',
-    alt: 'High-end commercial lobby interior fit-out'
+    image: 'https://5.imimg.com/data5/SELLER/Default/2023/2/DA/KX/YQ/40746014/roof-tiles-fabricator-1000x1000.jpg',
+    alt: 'Architectural clay roof tiles and canopy'
   },
   {
     id: 5,
     title: 'Residential Renovation',
-    description: 'Complete home transformations featuring premium finishes, smart lighting, and custom glass elements.',
+    description: 'Comprehensive home transformations delivered with meticulous attention to detail. We revitalize your living spaces with premium finishes, modern layouts, and bespoke craftsmanship.',
     icon: 'home',
     tag: 'Residential',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBkYbwGQQVJhZl7QhnHbK6opGuc2LqSEHvUWkbp5VISrpJvl16q6zIlcVbXVl2IkokfbgNM0CH1tqJ6NWWUZ1N6ywmriajsxsdYIGkvX2tggHvG7ZHqpi1iYRwsk9qpAChHA06l2-HijLj-cYnKEhB7fxHMc2aRV4r8vwzzfTvC35C1VXQp_1c3sI9hf2i-_mool84TPeYs4UJKV9C7vzEQvGhaHPE3DjP83k0gVBZYxFMTB89MkEBWrSBiXVRn4zNduTPhyEOgfoxF',
-    alt: 'Luxury home interior renovation with open plan layout'
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800',
+    alt: 'Luxury residential interior'
+  },
+  {
+    id: 6,
+    title: 'Welding Services',
+    description: 'Precision fabrication and structural metalwork delivered by certified experts. From decorative iron work to heavy-duty industrial welding, we ensure uncompromised durability.',
+    icon: 'hardware',
+    tag: 'Metalwork',
+    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800',
+    alt: 'Professional welding services in progress'
+  },
+  {
+    id: 7,
+    title: 'Carpentry Services',
+    description: 'Masterful woodworking and custom cabinetry tailored to your specifications. We combine traditional techniques with modern precision to create timeless wooden structures and furniture.',
+    icon: 'handyman',
+    tag: 'Woodwork',
+    image: 'https://www.keycb.com.au/wp-content/uploads/2023/05/key-carpentry-5-reasons-to-hire-a-professional-carpenter-img-1.jpg',
+    alt: 'Carpenter actively working on wood'
+  },
+  {
+    id: 8,
+    title: 'Painting Services',
+    description: 'Elevate your interiors and exteriors with our professional painting services. We utilize premium paints, rigorous preparation, and expert application for a flawless, enduring finish.',
+    icon: 'format_paint',
+    tag: 'Finishing',
+    image: 'https://as2.ftcdn.net/v2/jpg/04/51/02/93/1000_F_451029352_y0IHC45pY1NLUXaTuysmjMcsDeqj5kT8.jpg',
+    alt: 'Painter working on a wall'
   }
 ];
 
@@ -59,12 +86,12 @@ export default function Services() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">
-          <div className="text-left max-w-3xl md:mt-4">
+          <div className="text-left max-w-4xl md:mt-4">
             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Our Expertise</span>
             <h2 className="mt-2 text-4xl md:text-5xl font-black text-white leading-tight tracking-tight">
               Premium Glass & <br className="md:hidden" />Interior Solutions
             </h2>
-            <p className="mt-4 text-lg text-slate-300 leading-relaxed max-w-2xl">
+            <p className="mt-4 text-lg text-slate-300 leading-relaxed max-w-3xl">
               Transforming environments through architectural innovation and bespoke glass craftsmanship. From commercial skyscrapers to luxury residences, we deliver excellence in every detail.
             </p>
           </div>

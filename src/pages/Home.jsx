@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-[100svh] md:min-h-0 md:h-[94vh] flex flex-col justify-center overflow-hidden py-4 md:py-0">
+      <section className="relative min-h-[90svh] md:min-h-0 md:h-[90vh] flex flex-col justify-center overflow-hidden py-4 md:py-0">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/80 to-background-dark/30 z-10"></div>
           <img
@@ -15,7 +15,7 @@ export default function Home() {
           />
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full">
-          <div className="max-w-4xl pt-8 md:pt-0">
+          <div className="max-w-4xl pt-2 md:pt-0">
             <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6 shadow-sm border border-primary/10">Premium Glass Engineering</span>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] mb-8 tracking-tight">
               Elevate your Space with <span className="text-white">Expert Glass & Interior Designs</span>
@@ -130,7 +130,7 @@ export default function Home() {
       <section className="py-24 bg-slate-50 dark:bg-slate-900/30 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            
+
             {/* Left Content */}
             <div className="relative z-10">
               <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Why Choose Us</h2>
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
 
             {/* Right Images (Bento Grid) */}
-            <div className="relative">
+            <div className="relative hidden md:block">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 via-transparent to-primary/10 blur-[100px] -z-10 rounded-full"></div>
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="space-y-4 sm:space-y-6 md:mt-12">
@@ -196,7 +196,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4 sm:space-y-6 md:-mt-8">
                   <div className="bg-primary p-8 rounded-3xl shadow-xl shadow-primary/30 text-white flex flex-col justify-center items-center sm:items-start gap-2 hover:-translate-y-1 transition-transform duration-300 text-center sm:text-left">
                     <span className="material-symbols-outlined text-4xl mb-2 opacity-80">military_tech</span>
@@ -240,8 +240,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 <h4 className="text-white text-2xl font-bold mb-2">The Crystal Hub</h4>
-                <p className="text-white/70 text-sm mb-4">Commercial Glazing • India</p>
-                <span className="text-primary font-bold text-sm uppercase tracking-widest">View Project</span>
+                <p className="text-white/70 text-sm mb-4">Commercial Glazing • Hyderabad</p>
               </div>
             </div>
 
@@ -253,8 +252,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 <h4 className="text-white text-2xl font-bold mb-2">Emerald Heights</h4>
-                <p className="text-white/70 text-sm mb-4">Interior & Glass • India</p>
-                <span className="text-primary font-bold text-sm uppercase tracking-widest">View Project</span>
+                <p className="text-white/70 text-sm mb-4">Interior & Glass • Hyderabad</p>
               </div>
             </div>
 
@@ -266,8 +264,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 <h4 className="text-white text-2xl font-bold mb-2">Nexus Headquarters</h4>
-                <p className="text-white/70 text-sm mb-4">Turnkey Interior • India</p>
-                <span className="text-primary font-bold text-sm uppercase tracking-widest">View Project</span>
+                <p className="text-white/70 text-sm mb-4">Turnkey Interior • Hyderabad</p>
               </div>
             </div>
           </div>

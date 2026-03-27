@@ -10,7 +10,7 @@ export default function Projects() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">
-          <div className="text-left max-w-2xl w-full">
+          <div className="text-left max-w-3xl w-full">
             <span className="text-primary font-bold text-sm uppercase tracking-widest mb-2 block">Our Portfolio</span>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
               Masterpieces in Glass & Light

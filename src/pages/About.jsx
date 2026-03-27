@@ -12,10 +12,10 @@ export default function About() {
                 ></div>
                 <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center w-full">
                     <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Est. 2005</span>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white max-w-2xl leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white max-w-3xl leading-tight">
                         Crafting Transparency & Elegance
                     </h1>
-                    <p className="text-slate-300 mt-4 md:mt-6 max-w-lg text-base md:text-lg">
+                    <p className="text-slate-300 mt-4 md:mt-6 max-w-xl text-base md:text-lg">
                         Discover the history and passion behind the region's leading glass and interior design specialists.
                     </p>
                 </div>
