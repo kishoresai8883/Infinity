@@ -143,7 +143,7 @@ export default function Contact() {
             <div className="w-full min-h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner relative flex">
                 <iframe 
                     title="Infinity Glass & Interiors Location Map"
-                    src="https://maps.google.com/maps?q=Motinagar,+Hyderabad,+Telangana+-+500018&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    src="https://maps.google.com/maps?q=Plot+No+180,+Sai+Dinesh+Apartments,+Motinagar,+Hyderabad+-+500018&t=&z=14&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
