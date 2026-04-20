@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import project1 from '../assets/residential_canopies.jpg';
+import project2 from '../assets/commercial_glass.jpg'
+import project6 from '../assets/glass_partition.jpg'
 
 export default function Projects() {
   return (
@@ -28,25 +31,25 @@ export default function Projects() {
             <img
               alt="Luxury Penthouse Glass"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTMsYRpAKjokR8EFJ0l3rj8k_n2sd919Y-3jJl7Izp1hG6iJF6IoUP0PO8pJ-lIxnp3nPxGB1n0IwmdxC5R_CG5VNYmyQn4Exj0TwN9bp8ryJYqGs9vxflHodeJh5xAu3FP_oSaT_AhF4BSHPU27kMXcldFoCkVGOZNqF6eGhZcywEVQ57QtWdJV_-KB7Unbf3lN-q1VSgJABrG8KzHdk4HqMUB4fnr31Od3pyK1Lh-FyrZfYuwP2dZqEY5SHJIGOWzgbQIs8LJF0N"
+              src={project1}
             />
             <div className="overlay absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 z-10 pointer-events-none">
               <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Residential</span>
-              <h3 className="text-white text-2xl font-bold mb-4">Luxury Penthouse Glass</h3>
-              <p className="text-slate-300 text-sm mb-6 line-clamp-2">High-performance structural glazing for a multi-story residential penthouse featuring panoramic skyline views.</p>
+              <h3 className="text-white text-2xl font-bold mb-4">Luxury Clay Canopies</h3>
+              <p className="text-slate-300 text-sm mb-6 line-clamp-2">We have installed Clay Canopies for a Residential building, providing shade and aesthetic appeal.</p>
             </div>
           </div>
 
           <div className="project-card relative group flex overflow-hidden rounded-xl aspect-[4/5] bg-slate-800 isolation-isolate">
             <img
               alt="Corporate Office Partition"
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX3cwiRPxw97-yAOHu1Pk50C2ddiOQBQsUfKq7k6pZYP9wOHDUbPfDGfHaEp2qkOhDMU2_mlQiU45_L5eFSeBX1gCgX8m0xdF7f_lxfZXmF4BGU3nfZXE_OoXBAwe2564CLPk1k9EulTn2Qsstih_8rD11LeBT4fhTZt4AX2wK96-thBNP73OK3QC3c4RoMDc8YA8e3bBqjxLm39dqtxpKWMscj7K3IBi4ibg2auDHtentRK3eGiuZsnfueOEpFmZGt3N1R5VE0241"
+              className="w-full h-full object-fit transition-transform duration-700 ease-out group-hover:scale-105"
+              src={project2}
             />
             <div className="overlay absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 z-10 pointer-events-none">
               <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Commercial</span>
-              <h3 className="text-white text-2xl font-bold mb-4">Tech Hub Partitions</h3>
-              <p className="text-slate-300 text-sm mb-6 line-clamp-2">Frameless acoustic glass partitions designed for a collaborative open-plan corporate headquarters.</p>
+              <h3 className="text-white text-2xl font-bold mb-4">Corporate Glass Building</h3>
+              <p className="text-slate-300 text-sm mb-6 line-clamp-2">We have installed Glass for a Commercial building, providing modern and sophisticated look.</p>
             </div>
           </div>
 
@@ -92,13 +95,13 @@ export default function Projects() {
           <div className="project-card relative group flex overflow-hidden rounded-xl aspect-[4/5] bg-slate-800 isolation-isolate">
             <img
               alt="Frameless Shower Enclosure"
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnug2LWYPBD8iGPa7kT1U1-o9MAzqUFEjhos9j4nqZJ9yw3J6NdjJnKkafJeenXsAbuCHHnH_mQs-BdhpNLbpYEcKOAiWYWmxQzfu06vTdCLuwyP_slcX0Cm48P7Yx5fvpLfuoAo7vcwRkMkEf3XF7COrAjoD1ZfaZFiQgLzGr3NBvBD4pYsIMLHGxjl615Zjv9jmvxQ8FWEGJcH9PWsTk91OqC_UQCqAqlRZGBBj7p9MXUspKr1XXAq1cC37dSY9cdx4wWF12t9jJ"
+              className="w-full h-full object-fit transition-transform duration-700 ease-out group-hover:scale-105"
+              src={project6}
             />
             <div className="overlay absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 z-10 pointer-events-none">
               <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Glass Work</span>
-              <h3 className="text-white text-2xl font-bold mb-4">Elite Shower Enclosures</h3>
-              <p className="text-slate-300 text-sm mb-6 line-clamp-2">Custom-fitted 12mm frameless glass enclosures with premium hardware for high-end hotel suites.</p>
+              <h3 className="text-white text-2xl font-bold mb-4">Glass Partitions</h3>
+              <p className="text-slate-300 text-sm mb-6 line-clamp-2">We have installed Glass Partitions for a Commercial building, providing organized and aesthetic look.</p>
             </div>
           </div>
         </div>

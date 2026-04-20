@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import aboutImg from '../assets/about.png';
+import portfolio1 from '../assets/commercial_glass.jpg'
+import portfolio3 from '../assets/fabrication.jpg'
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full">
           <div className="max-w-4xl pt-2 md:pt-0">
-            <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6 shadow-sm border border-primary/10">Premium Glass Engineering</span>
+            <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6 shadow-sm border border-primary/10">Premium Works</span>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] mb-8 tracking-tight">
               Elevate your Space with <span className="text-white">Expert Glass & Interior Designs</span>
             </h1>
@@ -235,8 +237,8 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-2xl aspect-[4/5]">
               <img
                 alt="Corporate Plaza"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGi-DSp3wcYbWnjmDHOjdTyQaKDyK5B024_KaeOZUtiLpvvv3Ez2VTxhYsGmPE8VK8bpyDC1RADBztd0Q9Lc2brDLjNvxu9o6XF9Sv0-r_ePkU6SW5qQbxoV8wVbrZ1eU05Qgz0ANlPLj9CQUgf_mwrcMUe9g1lHApPm7bDfnOitIpuvPEosvF_NLVESJBLKMJriVmM63ndaUvamaTHins6zVMYmdBlm9qpsZPRJpU4ekdybYA9N5wX5cdlQXMSRYTRzv-57emEn74"
+                className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-110"
+                src={portfolio1}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 <h4 className="text-white text-2xl font-bold mb-2">The Crystal Hub</h4>
@@ -247,7 +249,7 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-2xl aspect-[4/5]">
               <img
                 alt="Luxury Villa"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGX_b-EZL5Mi99KMHZTtYdPkXDrMCdgJrKymnL2nL_I_5zseZwCe7AmU0FcAUUW47iC9fuDV2hQmeXP5z9JBbq4IQAEp-sd2kIDZvV1gFWsjuyXGpQ4iPaZdINp-n9BjnYuPf2btDZVdqsWOC4tdMWxV-TzEbIbsf0zbCBPxjcHJdFdffQYgsuG2h174TLRri2VqXuQFvL8rBDJvw40f1DOtJ2nuRsiiJdSdQaAITYfe_rAh92UzrSlUoT2l_xd0R9R5OjtaxQJV2z"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
@@ -260,11 +262,11 @@ export default function Home() {
               <img
                 alt="Tech Office"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9yVZbhSSVlq9-pFygNKZeNN8zC9s6iry-kHIwR50xniWXBRhVtDcC_u2LhhLFeFjmmFCbKNKgc9D-9pjy72tstzL3N51vxvPLQBF4-4wNMxNQ33_9GIAudJ9t1HLk1SwEACMX3q8jJt6YRiHGKZePUX_Mmp_-F0bU64Ckmt_VMgH0kqtfD8LO6qYbgjxh3_o23kZSxv-N6I1sLckXbUq8EOV04R0O7bB6iLIE4TMuqKp1Fo65lFNRsu5eI_XTSY3ooZvBV-IsrLgL"
+                src={portfolio3}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                <h4 className="text-white text-2xl font-bold mb-2">Nexus Headquarters</h4>
-                <p className="text-white/70 text-sm mb-4">Turnkey Interior • Hyderabad</p>
+                <h4 className="text-white text-2xl font-bold mb-2">Palm Grove Villas</h4>
+                <p className="text-white/70 text-sm mb-4">Residential Works • Hyderabad</p>
               </div>
             </div>
           </div>
