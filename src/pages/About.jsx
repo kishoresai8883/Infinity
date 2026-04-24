@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import aboutImg from '../assets/about.png';
 
 export default function About() {
     return (
@@ -39,15 +40,15 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative max-w-[440px] mx-auto w-full">
                         <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                             <img
                                 alt="Engineers working in a modern glass workshop"
                                 className="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSiJp7Kf4otEmJGv6FGEWcgvkQimckMubQ_FSUfAaovYlbKQGTXxLKQ71eLD4DZcCt7aYWkA_Haxm0abV0YDV4LiV5VJHEMS_5jujPIbgIjWwSMIZ-8TBDVweSJv_FXilIIHTLiqtCdZnCblUeGfCcbjut91PPSG0MmraIX3wF35MQdPbpBizpaGObtmGkCV-dCzWmulSJW08UGT5wgLsXUUm4pNFGFnbIt3i6JYgK3qtEZA6--TPqANPr1tv8AAADEQFjtMU9Xmfz"
+                                src={aboutImg}
                             />
                         </div>
-                        <div className="absolute -bottom-6 -left-6 bg-primary p-8 rounded-xl shadow-lg hidden lg:block">
+                        <div className="absolute -bottom-8 -left-8 bg-primary p-6 rounded-xl shadow-lg hidden lg:block">
                             <p className="text-white text-4xl font-black">15+</p>
                             <p className="text-white/80 text-sm font-medium uppercase tracking-tighter">Years of Craft</p>
                         </div>

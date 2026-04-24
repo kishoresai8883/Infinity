@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import aboutImg from '../assets/about.png';
+import aboutImg from '../assets/about_img.jpg';
 import portfolio1 from '../assets/commercial_glass.jpg'
 import portfolio3 from '../assets/fabrication.jpg'
 
@@ -49,7 +49,7 @@ export default function Home() {
                   src={aboutImg}
                 />
               </div>
-              <div className="absolute -bottom-10 -right-14 bg-primary p-8 rounded-2xl hidden md:block">
+              <div className="absolute -bottom-10 -right-14 bg-primary p-6 rounded-2xl hidden md:block">
                 <p className="text-white text-4xl font-black">15+</p>
                 <p className="text-white/80 text-sm font-medium">Years of Excellence</p>
               </div>
