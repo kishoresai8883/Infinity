@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AnimatedSection from '../components/AnimatedSection';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -42,15 +44,21 @@ export default function Contact() {
                     style={{ backgroundImage: `url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=2000")` }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
-                <div className="relative h-full flex items-center justify-center px-6 w-full">
-                    <div className="text-center w-full">
-                        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Contact Us</h1>
-                        <p className="text-slate-300 max-w-xl mx-auto text-base md:text-lg">Expert glass solutions and interior design at your fingertips. Reach out to transform your space today.</p>
-                    </div>
+                <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">
+                    <motion.div
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="text-left max-w-2xl w-full"
+                    >
+                        <span className="text-primary font-bold text-sm uppercase tracking-widest mb-2 block">contact us</span>
+                        <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">Feel free to reach out</h1>
+                        <p className="text-slate-300 text-base md:text-lg leading-relaxed">Expert glass solutions and interior design at your fingertips. Reach out to transform your space today.</p>
+                    </motion.div>
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <AnimatedSection className="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <div className="space-y-12">
                     <div>
                         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
@@ -132,45 +140,45 @@ export default function Contact() {
                             <textarea className="rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary px-4 py-3" placeholder="Tell us about your requirements..." rows="4" name="message" value={formData.message} onChange={handleChange} required></textarea>
                         </label>
                         <button className="w-full bg-primary text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all flex items-center justify-center gap-2" type="submit">
-                            Send Message <span className="material-symbols-outlined text-sm">send</span>
+                            Send Message
                         </button>
                         <p className="text-xs text-center text-slate-500 dark:text-slate-400">By submitting this form, you agree to our privacy policy.</p>
                     </form>
                 </div>
-            </div>
+            </AnimatedSection>
 
-        <div className="px-6 lg:px-20 pb-20 max-w-7xl mx-auto">
-            <div className="w-full min-h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner relative flex">
-                <iframe 
-                    title="Infinity Glass & Interiors Location Map"
-                    src="https://maps.google.com/maps?q=Plot+No+180,+Sai+Dinesh+Apartments,+Motinagar,+Hyderabad+-+500018&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
-                    allowFullScreen="" 
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
-        </div>
+            <AnimatedSection className="px-6 lg:px-20 pb-20 max-w-7xl mx-auto">
+                <div className="w-full min-h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-inner relative flex">
+                    <iframe
+                        title="Infinity Glass & Interiors Location Map"
+                        src="https://maps.google.com/maps?q=Plot+No+180,+Sai+Dinesh+Apartments,+Motinagar,+Hyderabad+-+500018&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0, position: 'absolute', top: 0, left: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </AnimatedSection>
 
-        {/* CTA Section */}
-        <section className="py-20 px-4">
-            <div className="bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
-                <div className="max-w-xl text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Looking for inspiration?</h2>
-                    <p className="text-slate-600 dark:text-slate-400 text-lg">Browse through our portfolio of premium architectural glass and interior design projects.</p>
+            {/* CTA Section */}
+            <AnimatedSection className="py-20 px-4">
+                <div className="bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
+                    <div className="max-w-xl text-center md:text-left">
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Looking for inspiration?</h2>
+                        <p className="text-slate-600 dark:text-slate-400 text-lg">Browse through our portfolio of premium architectural glass and interior design projects.</p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                        <Link to="/projects" className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all text-center w-full sm:w-auto">
+                            View Portfolio
+                        </Link>
+                        <Link to="/services" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all text-center w-full sm:w-auto">
+                            Our Services
+                        </Link>
+                    </div>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                    <Link to="/projects" className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all text-center w-full sm:w-auto">
-                        View Portfolio
-                    </Link>
-                    <Link to="/services" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all text-center w-full sm:w-auto">
-                        Our Services
-                    </Link>
-                </div>
-            </div>
-        </section>
-    </main>
+            </AnimatedSection>
+        </main>
     );
 }

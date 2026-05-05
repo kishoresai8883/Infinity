@@ -1,4 +1,6 @@
 import ServiceCard from '../components/ServiceCard';
+import AnimatedSection from '../components/AnimatedSection';
+import { motion } from 'framer-motion';
 
 const SERVICES_DATA = [
   {
@@ -86,7 +88,12 @@ export default function Services() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">
-          <div className="text-left max-w-4xl md:mt-4">
+          <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-left max-w-4xl md:mt-4"
+          >
             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Our Expertise</span>
             <h2 className="mt-2 text-4xl md:text-5xl font-black text-white leading-tight tracking-tight">
               Premium Glass & <br className="md:hidden" />Interior Solutions
@@ -94,12 +101,12 @@ export default function Services() {
             <p className="mt-4 text-lg text-slate-300 leading-relaxed max-w-3xl">
               Transforming environments through architectural innovation and bespoke glass craftsmanship. From commercial skyscrapers to luxury residences, we deliver excellence in every detail.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 px-6 bg-slate-50/50 dark:bg-background-dark/50">
+      <AnimatedSection className="py-20 px-6 bg-slate-50/50 dark:bg-background-dark/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES_DATA.map((service) => (
@@ -119,10 +126,10 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* CTA Section */}
-      <section className="py-20 px-6">
+      <AnimatedSection className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="bg-slate-100 dark:bg-slate-900/80 p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 border border-slate-200 dark:border-slate-800">
             <div className="flex-1">
@@ -139,7 +146,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </main>
   );
 }

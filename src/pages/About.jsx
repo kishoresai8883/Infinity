@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import aboutImg from '../assets/about.png';
+import AnimatedSection from '../components/AnimatedSection';
+import { motion } from 'framer-motion';
 
 export default function About() {
     return (
@@ -11,7 +13,12 @@ export default function About() {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=2000')` }}
                 ></div>
-                <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center w-full">
+                <motion.div 
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center w-full"
+                >
                     <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Est. 2005</span>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white max-w-3xl leading-tight">
                         Crafting Transparency & Elegance
@@ -19,11 +26,11 @@ export default function About() {
                     <p className="text-slate-300 mt-4 md:mt-6 max-w-xl text-base md:text-lg">
                         Discover the history and passion behind the region's leading glass and interior design specialists.
                     </p>
-                </div>
+                </motion.div>
             </section>
 
             {/* Our Story Section */}
-            <section className="py-20 px-4">
+            <AnimatedSection className="py-20 px-4">
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="text-primary font-bold text-sm uppercase tracking-widest mb-2">Our Story</h2>
@@ -54,10 +61,10 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* Our Values Section */}
-            <section className="py-20 bg-slate-100 dark:bg-slate-900/50 px-4">
+            <AnimatedSection className="py-20 bg-slate-100 dark:bg-slate-900/50 px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-primary font-bold text-sm uppercase tracking-widest mb-2">Our Values</h2>
@@ -93,10 +100,10 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/* Our Process Section */}
-            <section className="py-20 px-4">
+            <AnimatedSection className="py-20 px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
                         <div>
@@ -130,7 +137,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
 
             {/*
       <section className="py-20 bg-slate-100 dark:bg-slate-900/50 px-4">
@@ -202,7 +209,7 @@ export default function About() {
       */}
 
             {/* CTA Section */}
-            <section className="py-20 px-4">
+            <AnimatedSection className="py-20 px-4">
                 <div className="bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
                     <div className="max-w-xl text-center md:text-left">
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Ready to start your project?</h2>
@@ -217,7 +224,7 @@ export default function About() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </AnimatedSection>
         </main>
     );
 }

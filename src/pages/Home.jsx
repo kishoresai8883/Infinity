@@ -2,14 +2,15 @@ import { Link } from 'react-router-dom';
 import aboutImg from '../assets/about_img.jpg';
 import portfolio1 from '../assets/commercial_glass.jpg'
 import portfolio3 from '../assets/fabrication.jpg'
+import AnimatedSection from '../components/AnimatedSection';
 
 export default function Home() {
   return (
     <main>
       {/* Hero Section */}
       <section className="relative min-h-[90svh] md:min-h-0 md:h-[90vh] flex flex-col justify-center overflow-hidden py-4 md:py-0">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/80 to-background-dark/30 z-10"></div>
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/80 to-background-dark/30 z-10 animate-fade-in"></div>
           <img
             alt="Modern Glass Architecture"
             className="w-full h-full object-cover"
@@ -18,19 +19,16 @@ export default function Home() {
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full">
           <div className="max-w-4xl pt-2 md:pt-0">
-            <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6 shadow-sm border border-primary/10">Premium Works</span>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] mb-8 tracking-tight">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6 shadow-sm border border-primary/10 animate-fade-in-up opacity-0 delay-100">Premium Works</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] mb-8 tracking-tight animate-fade-in-up opacity-0 delay-200">
               Elevate your Space with <span className="text-white">Expert Glass & Interior Designs</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl animate-fade-in-up opacity-0 delay-300">
               We delivers high-quality glass and interior solutions in AP & TG. From elegant glass partitions to durable exterior cladding, we bring modern design and precision craftsmanship to every project.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto animate-fade-in-up opacity-0 delay-400">
               <Link to="/contact" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 w-full sm:w-auto">
                 Get a Consultation <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-              </Link>
-              <Link to="/projects" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl text-lg font-bold transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
-                View Portfolio
               </Link>
             </div>
           </div>
@@ -38,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-background-light dark:bg-background-dark" id="about">
+      <AnimatedSection className="py-24 bg-background-light dark:bg-background-dark" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative w-4/5 sm:w-3/4 lg:w-4/5 xl:w-3/4 mx-auto">
@@ -76,10 +74,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Services Section */}
-      <section className="py-24 bg-slate-100 dark:bg-slate-900/50" id="services">
+      <AnimatedSection className="py-24 bg-slate-100 dark:bg-slate-900/50" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Expertise</h2>
@@ -126,10 +124,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-slate-50 dark:bg-slate-900/30 overflow-hidden relative">
+      <AnimatedSection className="py-24 bg-slate-50 dark:bg-slate-900/30 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -218,10 +216,10 @@ export default function Home() {
 
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Latest Projects Preview */}
-      <section className="py-24 bg-background-light dark:bg-background-dark" id="projects">
+      <AnimatedSection className="py-24 bg-background-light dark:bg-background-dark" id="projects">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center md:items-end text-center md:text-left mb-12 gap-6">
             <div>
@@ -271,10 +269,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <AnimatedSection className="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 transform translate-x-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black mb-8">Ready to Transform Your Space?</h2>
@@ -290,7 +288,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </main>
   );
 }

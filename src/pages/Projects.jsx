@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import project1 from '../assets/residential_canopies.jpg';
 import project2 from '../assets/commercial_glass.jpg'
+import project4 from '../assets/exterior.jpg'
 import project6 from '../assets/glass_partition.jpg'
+import AnimatedSection from '../components/AnimatedSection';
+import { motion } from 'framer-motion';
 
 export default function Projects() {
   return (
@@ -13,7 +16,12 @@ export default function Projects() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         <div className="relative h-full flex items-center px-6 max-w-7xl mx-auto w-full">
-          <div className="text-left max-w-3xl w-full">
+          <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-left max-w-3xl w-full"
+          >
             <span className="text-primary font-bold text-sm uppercase tracking-widest mb-2 block">Our Portfolio</span>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
               Masterpieces in Glass & Light
@@ -21,11 +29,10 @@ export default function Projects() {
             <p className="text-slate-300 text-base md:text-lg leading-relaxed">
               Discover our curated collection of premium architectural glass solutions and modern interior transformations across residential and commercial sectors.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-
-      <div className="px-4">
+      <AnimatedSection className="px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="project-card relative group flex overflow-hidden rounded-xl aspect-[4/5] bg-slate-800 isolation-isolate">
             <img
@@ -68,27 +75,27 @@ export default function Projects() {
 
           <div className="project-card relative group flex overflow-hidden rounded-xl aspect-[4/5] bg-slate-800 isolation-isolate">
             <img
-              alt="Modern Kitchen Backsplash"
+              alt="Modern Exterior Design"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx_uOag8cOoq6xb0g706s-73ldjnoefrZKysQd7Os3wleWFoEV6cDdkrrafdog_7RWRgOainXQHLVf-YFPmON33SyEJFg2XdrIgFZUjXTaw9-HWcYELUN_8ij5zx4vIFlrEHMFPhC5e_sEvnWNwwJ05SFgCyiIS5ZHRGy80JXKhvgw0tk2rdRV_FM0aXD6Uj_5aM-VL0npcn_Cli-wvlYxeOzZjAq9Bq2byl3eBcOMNY9xqGJ8Mgw-6-0iUiM7qlThcRI9q_UarmLz"
+              src={project4}
             />
             <div className="overlay absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 z-10 pointer-events-none">
-              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Residential</span>
-              <h3 className="text-white text-2xl font-bold mb-4">Sapphire Glass Kitchen</h3>
-              <p className="text-slate-300 text-sm mb-6 line-clamp-2">Back-painted tempered glass panels providing a seamless and hygienic surface for a modern culinary space.</p>
+              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Exterior Design</span>
+              <h3 className="text-white text-2xl font-bold mb-4">Exterior Works for Villa's</h3>
+              <p className="text-slate-300 text-sm mb-6 line-clamp-2">The Villa features a Modern architecture style with wood-look panels & textured cladding.</p>
             </div>
           </div>
 
           <div className="project-card relative group flex overflow-hidden rounded-xl aspect-[4/5] bg-slate-800 isolation-isolate">
             <img
-              alt="Frosted Glass Meeting Room"
+              alt="Interior design"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkbJdI9NM6NYiZAUJClG2ELaAkXdbiXmPe76xI4k6kK-I-9QamP8jWZhlNcRfhkkmR6SlsTD3ApLiDwZldmO1iVYtlWgoXvyW-80V5JnQ5cveHUF5mumXRgEmZuorXYqXOXPO0a-YhtUuHEv4qnuQJUSxn8wWQZhvJoVieL4DR_CEuwB9iaMgDOGS9g5FAR7IQmJox-FfK4aAQE3rqZd0vzzCRfS81TjBWzXWq4CXhvcKxDrQcqF0y4L8vVABHAt3zv72GaCtCZ1-R"
+              src="https://i.pinimg.com/736x/cc/21/8e/cc218eb014ed69d7dfbd692d71ebd33d.jpg"
             />
             <div className="overlay absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 z-10 pointer-events-none">
-              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Commercial</span>
-              <h3 className="text-white text-2xl font-bold mb-4">Privacy Frosted Suites</h3>
-              <p className="text-slate-300 text-sm mb-6 line-clamp-2">Acid-etched glass solutions offering privacy without compromising natural light flow in boardroom settings.</p>
+              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-2 pointer-events-auto">Interior Design</span>
+              <h3 className="text-white text-2xl font-bold mb-4">Modern Interior Design</h3>
+              <p className="text-slate-300 text-sm mb-6 line-clamp-2">We have designed Modern Interiors for residential/commercial buildings.</p>
             </div>
           </div>
 
@@ -106,7 +113,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <section className="mt-24 bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
+        <AnimatedSection className="mt-24 bg-primary/10 rounded-2xl p-10 md:p-16 border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
           <div className="max-w-xl text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Have a specific vision in mind?</h2>
             <p className="text-slate-600 dark:text-slate-400 text-lg">Our design team works closely with you to bring your architectural glass and interior dreams to life.</p>
@@ -115,8 +122,8 @@ export default function Projects() {
             <Link to="/contact" className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all text-center w-full sm:w-auto">Start Your Project</Link>
             <button className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all w-full sm:w-auto">Download Catalog</button>
           </div>
-        </section>
-      </div>
+        </AnimatedSection>
+      </AnimatedSection>
     </main>
   );
 }
